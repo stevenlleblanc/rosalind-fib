@@ -7,8 +7,11 @@
 #include <iostream>
 using namespace std;
 
-unsigned long long rabbit_reccurence(const unsigned int offspring, unsigned int & curr_month, const unsigned int total_months,
-	const unsigned long long f2, const unsigned long long f1) {
+unsigned long long rabbit_reccurence(const unsigned int offspring, unsigned int & curr_month, 
+	const unsigned int total_months, const unsigned long long f2, const unsigned long long f1) {
+	/* Recursive loop, calculating next total size from the previous month's size and running
+	* until the desired month is reached
+	*/
 
 	unsigned long long f0;
 
